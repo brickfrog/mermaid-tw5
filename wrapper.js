@@ -2,7 +2,6 @@
 title: $:/plugins/gt6796c/mermaid-tw5/wrapper.js
 type: application/javascript
 module-type: widget
-
 \*/
 (function() {
   /* jslint node: true, browser: true */
@@ -12,6 +11,7 @@ module-type: widget
 
   let Widget = require("$:/core/modules/widgets/widget.js").widget;
   let Rocklib = require("$:/plugins/gt6796c/rocklib/widget-tools.js").rocklib;
+  let rocklib = new Rocklib();
   if ($tw.browser && !window.mermaidAPI) {
     window.rocklib = new Rocklib();
     window.mermaidAPI = require("$:/plugins/gt6796c/mermaid-tw5/mermaid.min.js").mermaidAPI;
